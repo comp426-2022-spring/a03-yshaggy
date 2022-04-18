@@ -83,7 +83,7 @@ const server = app.listen(HTTP_PORT, () => {
 
 
     app.get('/app/flip/call/:call', (req, res) => {
-        const call = req params.call;
+        const call = req.params.call;
         res.status(200).json(flipACoin(call))
     });
     app.get('/app/flip/', (req,res) => {
