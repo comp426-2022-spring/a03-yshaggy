@@ -4,7 +4,7 @@
 // Require Express.js
 const express = require('express')
 const app = express()
-const args = minimist(process.argv.slice(2))
+const args = require("minimist")(process.argv.slice(2))
 
     //console.log(args)
 args["port"]
